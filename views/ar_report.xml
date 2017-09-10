@@ -33,7 +33,7 @@
             <field name="name">ar.report.form</field>
             <field name="model">ar.report</field>
             <field name="arch" type="xml">
-                <form string="Ar eport">
+                <form string="Ar Report">
                     <sheet>
                         <group>
                             <group>

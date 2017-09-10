@@ -66,7 +66,7 @@ class ar_report_line(models.Model):
 
     report_id = fields.Many2one('ar.report','Partner')
     partner_id = fields.Many2one('res.partner','Partner')
-    sum_open_amount = fields.Float(string='Sum pen Amount', digits=dp.get_precision('Account'), compute='_compute_amount')
+    sum_open_amount = fields.Float(string='Sum Open Amount', digits=dp.get_precision('Account'), compute='_compute_amount')
     sum_total_amount = fields.Float(string='Sum Total Amount', digits=dp.get_precision('Account'), compute='_compute_amount')
     account_invoice_ids = fields.Many2many('account.invoice', string='invoice Lines',readonly=True, copy=False)
 
@@ -82,5 +82,3 @@ class ar_report_line(models.Model):
                 sum_total_amount+=invoice.amount_total
             account.sum_open_amount = sum_open_amount
             account.sum_total_amount = sum_total_amount
-
-
