@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+         <record model="ir.ui.view" id="seidel_ar_report_invoice_tree">
+             <field name="model">account.invoice</field>
+             <field name="inherit_id" ref="account.invoice_tree" />
+             <field name="arch" type="xml">
+
+                <field name='date_due' position="after">
+                    <field name="overdue"/>
+                    <field name="payment"/>
+                </field>
+             </field>
+        </record>
+
+        <record model="ir.ui.view" id="seidel_ar_report_invoice_form">
+             <field name="model">account.invoice</field>
+             <field name="inherit_id" ref="account.invoice_form" />
+             <field name="arch" type="xml">
+
+                <field name='date_invoice' position="after">
+                    <field name="overdue"/>
+                </field>
+             </field>
+        </record>
+
+        <record id="account_invoice_ar_print_view" model="ir.ui.view">
+            <field name="name">ar.report.form</field>
+            <field name="model">ar.report</field>
+            <field name="arch" type="xml">
+                <form string="AR Print">
+                    <p class="oe_grey">
+                        Grouping customer invoice printing.
+                    </p>
+                    <footer>
+                        <button string="Print" name="ar_print_invoice" type="object" default_focus="1" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window id="action_account_invoice_a"
+            multi="True"
+            key2="client_action_multi" name="AR Print"
+            res_model="ar.report" src_model="account.invoice"
+            view_mode="form" target="new" view_type="form" view_id="account_invoice_ar_print_view"   />
+
+    </data>
+</openerp>

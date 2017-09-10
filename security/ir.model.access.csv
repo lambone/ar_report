@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ar_invoice_report,ar.report,model_ar_report,seidel_ar_report.group_ar_report_user,1,1,1,1
+access_ar_invoice_report_line,ar.report.line,model_ar_report_line,seidel_ar_report.group_ar_report_user,1,1,1,1

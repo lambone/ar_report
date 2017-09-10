@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="ar_layout_footer">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-xs-3">
+
+                    </div>
+                    <div class="col-xs-2 col-xs-offset-2 text-center">
+                            <ul class="list-inline" >
+                            <li style="font-size: 12px">Page</li>
+                            <li style="font-size: 12px"><span class="page"/></li>
+                            <li style="font-size: 12px">of</li>
+                            <li style="font-size: 12px"><span class="topage"/></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2 col-xs-offset-3 text-right">
+
+                    </div>
+                </div>
+            </div>
+            <t t-raw="0" />
+        </template>
+
+        <template id="report_ar_print">
+            <t t-call="report.html_container">
+                <t t-call="seidel_ar_report.ar_layout_footer">
+                <div class="page">
+                <style type="text/css">
+                   .tab_style{
+                        width:1200px;
+                        margin:0 auto;
+                    }
+                    .tab_style thead tr th{
+                        border-top:1px solid #000;
+                        border-bottom:1px solid #000;
+                    }
+                    .tab_style tbody tr td{
+                        font-size:14px;
+                        padding:4px 0;
+
+                    }
+                    .tab_style tbody tr.body td{
+                        font-size:14px;
+                        padding:1px 0;
+
+                    }
+                    .tr_space td{
+                        height:21px;
+                    }
+                    .tr_border td{
+                        border-bottom:1px solid #000;
+                        border-right:1px solid #000;
+                        border-top:1px solid #000;
+                    }
+                    .tr_border td:first-child,.tr_borders td:first-child{
+                        border-left:1px solid #000;
+
+                    }
+                    .tr_borders td{
+                        border-bottom:1px solid #000;
+                        border-right:1px solid #000;
+
+                    }
+                    .tr_botton_border td{
+                        border-bottom:1px solid #000;
+                    }
+                    .td_weight{
+                        font-weight: bold;
+                    }
+                    .dobule_border{
+                        border-bottom:4px double #000;
+                        font-weight:bold;
+                    }
+
+                    #tab tbody tr td:nth-child(3){
+                        min-width:415px;
+                    }
+                    #tab tbody tr td{
+                        min-width: 95px;
+                    }
+                </style>
+                <t t-foreach="docs" t-as="o">
+
+                         <table cellspacing="0" class="tab_style">
+
+                        <tbody>
+                             <tr>
+                                <td colspan="8"  align="center" style="border:2px solid #000;   padding:6px 0;font-size: 30px;font-weight:900">Accounts Receivable</td>
+                            </tr>
+                            <tr class="tr_space">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="tr_border">
+                                <td style="padding-left:3px">Document ID</td>
+                                <td style="padding-left:3px" colspan="3"> <span t-field="o.document_id"/></td>
+                                <td style="padding-left:3px" colspan="2"> Issue by</td>
+                                <td style="padding-left:3px" colspan="2"> <span t-field="o.create_uid.name"/></td>
+                            </tr>
+                            <tr class="tr_borders">
+                                <td style="padding-left:3px">   Version</td>
+                                <td style="padding-left:3px" colspan="3"> <span t-field="o.version"/></td>
+                                <td style="padding-left:3px" colspan="2"> First release</td>
+                                <td style="padding-left:3px" colspan="2"> <span t-field="o.create_date"/></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table  cellspacing="0" class="tab_style">
+                        <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+
+                                    <td></td>
+                                    <td></td>
+                                    <td style="font-weight:bold;" align="right" >Date of issue</td>
+
+                                    <td style="font-weight:bold;" width="135px" align="right" ><span t-field="o.create_date" t-field-options='{"format": "MMMM d,yyyy"}'/></td>
+
+                                </tr>
+                        </tbody>
+                    </table>
+                    <table cellspacing="0" class="tab_style">
+                        <tbody>
+
+                            <tr>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+
+                            <t t-foreach="o.line_ids" t-as="l">
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            <tr>
+                                <td style="font-weight:bold;" colspan="3"><span t-field="l.partner_id.name"/></td>
+
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="tr_botton_border">
+                                <td  width="110px">Invoice #</td>
+                                <td  width="490px">Description</td>
+                                <td width="150px" >Payment Term</td>
+                                <td  width="85px" align="left">Invoice Date</td>
+                                <td  width="85px" align="left">Due Date</td>
+                                <td  width="55px" align="left">Overdue</td>
+                                <td width="105px" align="right">Open Amount</td>
+                                <td width="105px" align="right">Total Amount</td>
+                            </tr>
+
+
+                            <t t-foreach="l.account_invoice_ids" t-as="invoice">
+                            <tr class="body">
+                                <td><span t-field="invoice.number"/></td>
+                                <td><span t-field="invoice.description"/></td>
+                                <td><span t-field="invoice.payment"/></td>
+                                <td align="left"><span t-field="invoice.date_invoice" t-field-options='{"format": "yyyy/MM/dd"}'/></td>
+                                <td align="left"><span t-field="invoice.date_due" t-field-options='{"format": "yyyy/MM/dd"}'/></td>
+                                <td align="right"><span t-field="invoice.overdue"/></td>
+                                <td align="right">$<span t-field="invoice.residual" /></td>
+                                <td align="right">$<span t-field="invoice.amount_total" /></td>
+                            </tr>
+                            </t>
+
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="dobule_border">Sum</td>
+                                <td class="dobule_border" align="right">$<span t-field="l.sum_open_amount"/></td>
+                                <td class="dobule_border" align="right">$<span t-field="l.sum_total_amount"/></td>
+                            </tr>
+
+
+
+                            </t>
+
+
+
+                        </tbody>
+                    </table>
+
+                </t>
+             </div>
+
+
+                </t>
+            </t>
+        </template>
+    </data>
+</openerp>

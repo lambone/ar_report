@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+       <record id="paperformat_euro_ar_print" model="report.paperformat">
+            <field name="name">AR Print A4</field>
+            <field name="default" eval="True" />
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">8</field>
+            <field name="margin_bottom">10</field>
+            <field name="margin_left">10</field>
+            <field name="margin_right">10</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">0</field>
+            <field name="dpi">200</field>
+        </record>
+        <report
+            id="action_report_ar_report"
+            model="ar.report"
+            string="AR print"
+            report_type="qweb-pdf"
+            name="seidel_ar_report.report_ar_print"
+            file="seidel_ar_report.report_ar_print"
+        />
+        <record id="action_report_ar_report" model="ir.actions.report.xml">
+            <field name="paperformat_id" ref="seidel_ar_report.paperformat_euro_ar_print"/>
+        </record>
+
+
+        <record id="ar_report_form_view" model="ir.ui.view">
+            <field name="name">ar.report.form</field>
+            <field name="model">ar.report</field>
+            <field name="arch" type="xml">
+                <form string="Ar eport">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="document_id"/>
+                                <field name="version"/>
+                            </group>
+                            <group>
+                                <field name="create_uid"/>
+                                <field name="create_date"/>
+                                <field name="issue_date"/>
+                            </group>
+                        </group>
+                        <field name="line_ids">
+                            <tree>
+                                <field name="partner_id"></field>
+                                <field name="sum_open_amount"></field>
+                                <field name="sum_total_amount"></field>
+
+
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="ar_report_tree_view" model="ir.ui.view">
+            <field name="name">sar.report.tree</field>
+            <field name="model">ar.report</field>
+            <field name="arch" type="xml">
+                <tree string="Ar Report">
+                    <field name="document_id"/>
+                    <field name="version"/>
+                    <field name="create_uid"/>
+                    <field name="create_date"/>
+                    <field name="issue_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="ar_report_search">
+            <field name="name">Ar report Search</field>
+            <field name="model">ar.report</field>
+            <field name="arch" type="xml">
+                <search string="Ar report Search">
+                    <field name="document_id"/>
+                    <field name="version"/>
+                    <field name="create_uid"/>
+                    <field name="create_date"/>
+                    <field name="issue_date"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_ar_report_view" model="ir.actions.act_window">
+            <field name="name">Ar report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ar.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+        </record>
+
+        <menuitem name="Ar Report" action="action_ar_report_view"
+                  id="menu_ar_report_view" parent="account.menu_finance_receivables" sequence="99"/>
+
+    </data>
+</openerp>

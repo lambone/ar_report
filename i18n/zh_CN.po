@@ -1,0 +1,1194 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hp_asset
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20150618\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-16 01:58+0000\n"
+"PO-Revision-Date: 2015-12-16 01:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hp_asset
+#: model:ir.module.category,name:hp_asset.module_category_hp_asset
+msgid "Asset"
+msgstr "Asset"
+
+#. module: hp_asset
+#: model:ir.actions.act_window,name:hp_asset.action_asset_category_view
+msgid "Asset Category"
+msgstr "资产类别"
+
+#. module: hp_asset
+#: field:asset.category,name:0
+msgid "Asset Category Name"
+msgstr "资产类别名称"
+
+#. module: hp_asset
+#: view:asset.category:hp_asset.assets_category_search
+msgid "Asset Category Search"
+msgstr "资产类别搜索"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_search
+msgid "Asset Search"
+msgstr "搜索资产"
+
+#. module: hp_asset
+#: model:ir.actions.act_window,name:hp_asset.action_asset_asset
+#: model:ir.actions.act_window,name:hp_asset.action_asset_asset_old
+msgid "Asset asset"
+msgstr "资产"
+
+#. module: hp_asset
+#: model:ir.actions.act_window,name:hp_asset.action_asset_brand_view
+msgid "Asset brand"
+msgstr "品牌"
+
+#. module: hp_asset
+#: view:asset.brand:hp_asset.assets_brand_search
+msgid "Asset brand Search"
+msgstr "品牌搜索"
+
+#. module: hp_asset
+#: model:ir.actions.act_window,name:hp_asset.action_asset_department_view
+msgid "Asset department"
+msgstr "部门"
+
+#. module: hp_asset
+#: view:asset.department:hp_asset.assets_department_search
+msgid "Asset department Search"
+msgstr "部门搜索"
+
+#. module: hp_asset
+#: model:ir.actions.act_window,name:hp_asset.action_asset_import_view
+msgid "Asset import"
+msgstr "资产数据导入"
+
+#. module: hp_asset
+#: view:asset.import:hp_asset.assets_import_search
+msgid "Asset import Search"
+msgstr "资产数据导入搜索"
+
+#. module: hp_asset
+#: model:ir.ui.menu,name:hp_asset.menu_asset_root
+msgid "Asset management"
+msgstr "资产管理"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+#: view:asset.asset:hp_asset.assets_form_view_edit
+#: view:asset.asset:hp_asset.assets_graph_view
+#: view:asset.asset:hp_asset.assets_tree_view
+#: model:ir.ui.menu,name:hp_asset.menu_ast_asset_asset
+#: model:ir.ui.menu,name:hp_asset.menu_ast_assets
+msgid "Assets"
+msgstr "资产"
+
+#. module: hp_asset
+#: view:asset.brand:hp_asset.assets_brand_form_view
+msgid "Assets Brand"
+msgstr "品牌"
+
+#. module: hp_asset
+#: model:ir.ui.menu,name:hp_asset.menu_ast_asset_brand
+msgid "Assets Brand "
+msgstr "品牌"
+
+#. module: hp_asset
+#: view:asset.category:hp_asset.assets_category_form_view
+#: view:asset.category:hp_asset.assets_category_tree_view
+#: view:asset.category:hp_asset.assets_category_tree_view2
+msgid "Assets Category"
+msgstr "资产类别"
+
+#. module: hp_asset
+#: model:ir.ui.menu,name:hp_asset.menu_ast_asset_category
+msgid "Assets Category "
+msgstr "资产类别"
+
+#. module: hp_asset
+#: model:ir.actions.act_window,name:hp_asset.action_assets_category_tree_view2
+#: model:ir.ui.menu,name:hp_asset.menu_ast_asset_category_list
+msgid "Assets Category List"
+msgstr "资产类别层级"
+
+#. module: hp_asset
+#: model:ir.ui.menu,name:hp_asset.menu_ast_asset_asset_old
+msgid "Assets Old"
+msgstr "原资产系统数据"
+
+#. module: hp_asset
+#: view:asset.brand:hp_asset.assets_brand_tree_view
+msgid "Assets brand"
+msgstr "品牌"
+
+#. module: hp_asset
+#: view:asset.department:hp_asset.assets_department_form_view
+#: view:asset.department:hp_asset.assets_department_tree_view
+#: view:asset.department:hp_asset.assets_department_tree_view2
+#: model:ir.ui.menu,name:hp_asset.menu_ast_asset_department
+msgid "Assets department"
+msgstr "部门"
+
+#. module: hp_asset
+#: model:ir.actions.act_window,name:hp_asset.action_assets_department_tree_view2
+#: model:ir.ui.menu,name:hp_asset.menu_ast_asset_department_list
+msgid "Assets department List"
+msgstr "部门层级"
+
+#. module: hp_asset
+#: view:asset.import:hp_asset.assets_import_form_view
+#: view:asset.import:hp_asset.assets_import_tree_view
+#: model:ir.ui.menu,name:hp_asset.menu_ast_asset_import
+msgid "Assets import"
+msgstr "资产数据导入"
+
+#. module: hp_asset
+#: field:asset.brand,name:0
+msgid "Brand Name"
+msgstr "品牌名称"
+
+#. module: hp_asset
+#: field:asset.category,child_ids:0
+msgid "Child category"
+msgstr "子分类"
+
+#. module: hp_asset
+#: field:asset.category,code:0
+msgid "Code"
+msgstr "代码"
+
+#. module: hp_asset
+#: field:asset.asset,create_uid:0
+#: field:asset.brand,create_uid:0
+#: field:asset.category,create_uid:0
+#: field:asset.department,create_uid:0
+#: field:asset.import,create_uid:0
+msgid "Created by"
+msgstr "创建人"
+
+#. module: hp_asset
+#: field:asset.asset,create_date:0
+#: field:asset.brand,create_date:0
+#: field:asset.category,create_date:0
+#: field:asset.department,create_date:0
+msgid "Created on"
+msgstr "创建于"
+
+#. module: hp_asset
+#: code:addons/hp_asset/models/asset_import.py:41
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: hp_asset
+#: model:ir.module.category,description:hp_asset.module_category_hp_asset
+msgid "Helps you manage your Asset."
+msgstr "Helps you manage your Asset."
+
+#. module: hp_asset
+#: field:asset.asset,id:0
+#: field:asset.brand,id:0
+#: field:asset.category,id:0
+#: field:asset.department,id:0
+#: field:asset.import,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: hp_asset
+#: help:asset.asset,state:0
+msgid "If asset is created, the status is 'Draft'."
+msgstr "新创建资产数据的状态为“草稿”"
+
+#. module: hp_asset
+#: help:asset.import,state:0
+msgid "If import is created, the status is 'confirm'."
+msgstr "导入完成，状态为“确认”"
+
+#. module: hp_asset
+#: field:asset.asset,write_uid:0
+#: field:asset.brand,write_uid:0
+#: field:asset.category,write_uid:0
+#: field:asset.department,write_uid:0
+#: field:asset.import,write_uid:0
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: hp_asset
+#: field:asset.asset,write_date:0
+#: field:asset.brand,write_date:0
+#: field:asset.category,write_date:0
+#: field:asset.department,write_date:0
+#: field:asset.import,write_date:0
+msgid "Last Updated on"
+msgstr "最后更新于"
+
+#. module: hp_asset
+#: model:res.groups,name:hp_asset.group_asset_manager
+msgid "Manager"
+msgstr "经理"
+
+#. module: hp_asset
+#: field:asset.category,show_name:0
+msgid "Name"
+msgstr "名称"
+
+#. module: hp_asset
+#: field:asset.category,note:0
+msgid "Note"
+msgstr "备注"
+
+#. module: hp_asset
+#: field:asset.category,parent_id:0
+msgid "Parent category"
+msgstr "父级分类"
+
+#. module: hp_asset
+#: model:ir.model,name:hp_asset.model_res_partner
+msgid "Partner"
+msgstr "业务伙伴"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_search
+msgid "Scrap"
+msgstr "报废"
+
+#. module: hp_asset
+#: model:ir.ui.menu,name:hp_asset.menu_ast_settings
+msgid "Settings"
+msgstr "设置"
+
+#. module: hp_asset
+#: field:asset.category,show_code:0
+msgid "Show Code"
+msgstr "显示编号"
+
+#. module: hp_asset
+#: field:asset.asset,state:0
+#: field:asset.import,state:0
+msgid "Status"
+msgstr "状态"
+
+#. module: hp_asset
+#: view:asset.category:hp_asset.assets_category_form_view
+msgid "Super Category..."
+msgstr "上级分类..."
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_search
+msgid "Used"
+msgstr "自用"
+
+#. module: hp_asset
+#: model:res.groups,name:hp_asset.group_asset_user
+msgid "User"
+msgstr "User"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view_edit
+msgid "cancel"
+msgstr "取消"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view_edit
+msgid "or"
+msgstr "或"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view_edit
+msgid "save"
+msgstr "保存"
+
+#. module: hp_asset
+#: field:asset.brand,sequence:0
+msgid "sequence"
+msgstr "序号"
+
+#. module: hp_asset
+#: view:asset.department:hp_asset.assets_department_form_view
+#: field:asset.department,parent_id:0
+msgid "上级部门"
+msgstr "上级部门"
+
+#. module: hp_asset
+#: field:asset.asset,q_zlh:0
+msgid "专利号"
+msgstr "专利号"
+
+#. module: hp_asset
+#: field:asset.asset,d_ywyfmj_dec:0
+msgid "业务用房面积"
+msgstr "业务用房面积"
+
+#. module: hp_asset
+#: field:asset.asset,q_cd:0
+msgid "产地"
+msgstr "产地"
+
+#. module: hp_asset
+#: field:asset.asset,d_cqxs:0
+msgid "产权形式"
+msgstr "产权形式"
+
+#. module: hp_asset
+#: field:asset.asset,jz_dec:0
+msgid "价值"
+msgstr "价值"
+
+#. module: hp_asset
+#: field:asset.asset,jzlx:0
+msgid "价值类型"
+msgstr "价值类型"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+#: view:asset.asset:hp_asset.assets_form_view_edit
+msgid "会计信息"
+msgstr "会计信息"
+
+#. module: hp_asset
+#: field:asset.asset,kjpzh:0
+msgid "会计凭证号"
+msgstr "会计凭证号"
+
+#. module: hp_asset
+#: field:asset.asset,q_syr:0
+msgid "使用人"
+msgstr "使用人"
+
+#. module: hp_asset
+#: field:asset.asset,c_syxz:0
+msgid "使用性质"
+msgstr "使用性质"
+
+#. module: hp_asset
+#: field:asset.asset,syfx:0
+msgid "使用方向"
+msgstr "使用方向"
+
+#. module: hp_asset
+#: field:asset.asset,d_syqlx:0
+msgid "使用权类型"
+msgstr "使用权类型"
+
+#. module: hp_asset
+#: field:asset.asset,syzk:0
+msgid "使用状况"
+msgstr "使用状况"
+
+#. module: hp_asset
+#: field:asset.asset,syzt:0
+msgid "使用状态"
+msgstr "使用状态"
+
+#. module: hp_asset
+#: field:asset.asset,sybm_id:0
+msgid "使用部门"
+msgstr "使用部门"
+
+#. module: hp_asset
+#: view:asset.import:hp_asset.assets_import_form_view
+msgid "例:20151201-机管局..."
+msgstr "例:20151201-机管局..."
+
+#. module: hp_asset
+#: field:asset.asset,bxjzrq_date:0
+msgid "保修截止日期"
+msgstr "保修截止日期"
+
+#. module: hp_asset
+#: field:asset.asset,t_bcnx_date:0
+msgid "保存年限"
+msgstr "保存年限"
+
+#. module: hp_asset
+#: field:asset.asset,qy_bgr:0
+msgid "保管人"
+msgstr "保管人"
+
+#. module: hp_asset
+#: selection:asset.asset,syzk:0
+msgid "入库"
+msgstr "入库"
+
+#. module: hp_asset
+#: field:asset.asset,rzxs:0
+msgid "入账形式"
+msgstr "入账形式"
+
+#. module: hp_asset
+#: field:asset.asset,d_qz_ftmj_dec:0
+msgid "其中：分摊面积"
+msgstr "其中：分摊面积"
+
+#. module: hp_asset
+#: field:asset.asset,d_qz_qnmj_dec:0
+msgid "其中：取暖面积"
+msgstr "其中：取暖面积"
+
+#. module: hp_asset
+#: field:asset.asset,d_qz_dymj_dec:0
+msgid "其中：独用面积"
+msgstr "其中：独用面积"
+
+#. module: hp_asset
+#: selection:asset.asset,mxlb:0
+#: selection:asset.asset,qdfs:0
+msgid "其他"
+msgstr "其他"
+
+#. module: hp_asset
+#: field:asset.asset,d_qtjz_dec:0
+msgid "其他价值"
+msgstr "其他价值"
+
+#. module: hp_asset
+#: field:asset.asset,d_qtmj_dec:0
+msgid "其他面积"
+msgstr "其他面积"
+
+#. module: hp_asset
+#: field:asset.asset,d_cjjz_dec:0
+msgid "出借价值"
+msgstr "出借价值"
+
+#. module: hp_asset
+#: field:asset.asset,d_cjmj_dec:0
+msgid "出借面积"
+msgstr "出借面积"
+
+#. module: hp_asset
+#: field:asset.asset,t_cbrq_date:0
+msgid "出版日期"
+msgstr "出版日期"
+
+#. module: hp_asset
+#: field:asset.asset,t_cbs:0
+msgid "出版社"
+msgstr "出版社"
+
+#. module: hp_asset
+#: field:asset.asset,q_cs_zznf:0
+msgid "出生/栽种年份"
+msgstr "出生/栽种年份"
+
+#. module: hp_asset
+#: field:asset.asset,d_czjz_dec:0
+msgid "出租价值"
+msgstr "出租价值"
+
+#. module: hp_asset
+#: field:asset.asset,d_czmj_dec:0
+msgid "出租面积"
+msgstr "出租面积"
+
+#. module: hp_asset
+#: field:asset.import,create_date:0
+msgid "创建日期"
+msgstr "创建日期"
+
+#. module: hp_asset
+#: field:asset.asset,djrq_date:0
+msgid "单据日期"
+msgstr "单据日期"
+
+#. module: hp_asset
+#: field:asset.asset,q_djsj_date:0
+msgid "单据时间"
+msgstr "单据时间"
+
+#. module: hp_asset
+#: field:asset.asset,kply:0
+msgid "卡片来源"
+msgstr "卡片来源"
+
+#. module: hp_asset
+#: field:asset.asset,qy_cfdd:0
+msgid "原存放地点"
+msgstr "原存放地点"
+
+#. module: hp_asset
+#: field:asset.asset,qy_sybm:0
+msgid "原系统使用部门"
+msgstr "原系统使用部门"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+#: view:asset.asset:hp_asset.assets_form_view_edit
+msgid "原系统相关字段"
+msgstr "原系统相关字段"
+
+#. module: hp_asset
+#: field:asset.asset,yzcbh:0
+msgid "原资产编号"
+msgstr "原资产编号"
+
+#. module: hp_asset
+#: field:asset.asset,c_fdjh:0
+msgid "发动机号"
+msgstr "发动机号"
+
+#. module: hp_asset
+#: field:asset.asset,q_fmr:0
+msgid "发明人"
+msgstr "发明人"
+
+#. module: hp_asset
+#: field:asset.asset,q_fmmc:0
+msgid "发明名称"
+msgstr "发明名称"
+
+#. module: hp_asset
+#: field:asset.asset,fph:0
+msgid "发票号"
+msgstr "发票号"
+
+#. module: hp_asset
+#: field:asset.asset,d_fzrq_date:0
+msgid "发证日期"
+msgstr "发证日期"
+
+#. module: hp_asset
+#: field:asset.asset,qdfs:0
+msgid "取得方式"
+msgstr "取得方式"
+
+#. module: hp_asset
+#: field:asset.asset,qy_bdfs:0
+msgid "变动方式"
+msgstr "变动方式"
+
+#. module: hp_asset
+#: field:asset.asset,qy_changereason:0
+msgid "变更原因"
+msgstr "变更原因"
+
+#. module: hp_asset
+#: field:asset.asset,c_hpzl:0
+msgid "号牌种类"
+msgstr "号牌种类"
+
+#. module: hp_asset
+#: field:asset.asset,htbh:0
+msgid "合同编号"
+msgstr "合同编号"
+
+#. module: hp_asset
+#: field:asset.asset,brand_id:0
+msgid "品牌"
+msgstr "品牌"
+
+#. module: hp_asset
+#: field:asset.asset,qy_brandname:0
+msgid "品牌备注"
+msgstr "品牌备注"
+
+#. module: hp_asset
+#: selection:asset.import,state:0
+msgid "回滚"
+msgstr "回滚"
+
+#. module: hp_asset
+#: field:asset.asset,qy_gbbm:0
+msgid "国标编码"
+msgstr "国标编码"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+#: view:asset.asset:hp_asset.assets_form_view_edit
+#: selection:asset.asset,mxlb:0
+msgid "图书档案"
+msgstr "图书档案"
+
+#. module: hp_asset
+#: field:asset.asset,image:0
+msgid "图片"
+msgstr "图片"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+#: view:asset.asset:hp_asset.assets_form_view_edit
+#: selection:asset.asset,mxlb:0
+msgid "土地/房屋/构筑物"
+msgstr "土地/房屋/构筑物"
+
+#. module: hp_asset
+#: field:asset.asset,d_tdjc:0
+msgid "土地级次"
+msgstr "土地级次"
+
+#. module: hp_asset
+#: field:asset.asset,d_dlyt:0
+msgid "地类用途"
+msgstr "地类用途"
+
+#. module: hp_asset
+#: field:asset.asset,jj_dec:0
+msgid "均价"
+msgstr "均价"
+
+#. module: hp_asset
+#: field:asset.asset,d_zlwz:0
+msgid "坐落位置"
+msgstr "坐落位置"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+#: view:asset.asset:hp_asset.assets_form_view_edit
+msgid "基本信息"
+msgstr "基本信息"
+
+#. module: hp_asset
+#: selection:asset.asset,sys_type:0
+msgid "备查-老黄浦"
+msgstr "备查-老黄浦"
+
+#. module: hp_asset
+#: field:asset.asset,bz:0
+#: field:asset.department,note:0
+msgid "备注"
+msgstr "备注"
+
+#. module: hp_asset
+#: field:asset.department,child_ids:0
+msgid "子部门"
+msgstr "子部门"
+
+#. module: hp_asset
+#: field:asset.asset,q_cfdd:0
+msgid "存放地点"
+msgstr "存放地点"
+
+#. module: hp_asset
+#: selection:asset.asset,mxlb:0
+msgid "家具/用具/装具"
+msgstr "家具/用具/装具"
+
+#. module: hp_asset
+#: field:asset.asset,d_dwtzjz_dec:0
+msgid "对外投资价值"
+msgstr "对外投资价值"
+
+#. module: hp_asset
+#: field:asset.asset,d_dwtzmj_dec:0
+msgid "对外投资面积"
+msgstr "对外投资面积"
+
+#. module: hp_asset
+#: field:asset.import,name:0
+msgid "导入批次"
+msgstr "导入批次"
+
+#. module: hp_asset
+#: field:asset.asset,import_scrap_id:0
+msgid "导入报废"
+msgstr "导入报废"
+
+#. module: hp_asset
+#: view:asset.import:hp_asset.assets_import_form_view
+#: selection:asset.import,import_type:0
+msgid "导入报废资产"
+msgstr "导入报废资产"
+
+#. module: hp_asset
+#: code:addons/hp_asset/models/asset_import.py:48
+#, python-format
+msgid "导入数据状态不是草稿,不能删除!"
+msgstr "导入数据状态不是草稿,不能删除!"
+
+#. module: hp_asset
+#: code:addons/hp_asset/models/asset_import.py:75
+#, python-format
+msgid "导入数据资产编号为空!第行！"
+msgstr "导入数据资产编号为空!第行！"
+
+#. module: hp_asset
+#: code:addons/hp_asset/models/asset_import.py:80
+#: code:addons/hp_asset/models/asset_import.py:101
+#, python-format
+msgid "导入数据资产编号有错误!  Excel第行！"
+msgstr "导入数据资产编号有错误!  Excel第行！"
+
+#. module: hp_asset
+#: field:asset.import,file_data:0
+msgid "导入文件"
+msgstr "导入文件"
+
+#. module: hp_asset
+#: field:asset.asset,import_code_id:0
+#: selection:asset.import,import_type:0
+msgid "导入更新编号"
+msgstr "导入更新编号"
+
+#. module: hp_asset
+#: code:addons/hp_asset/models/asset_import.py:66
+#: code:addons/hp_asset/models/asset_import.py:90
+#, python-format
+msgid "导入的Excel数据为空！"
+msgstr "导入的Excel数据为空！"
+
+#. module: hp_asset
+#: code:addons/hp_asset/models/asset_import.py:41
+#, python-format
+msgid "导入的excel有问题,请检查!"
+msgstr "导入的excel有问题,请检查!"
+
+#. module: hp_asset
+#: field:asset.import,import_type:0
+msgid "导入类型"
+msgstr "导入类型"
+
+#. module: hp_asset
+#: field:asset.asset,d_jzjg:0
+msgid "建筑结构"
+msgstr "建筑结构"
+
+#. module: hp_asset
+#: selection:asset.asset,syzk:0
+msgid "待报废"
+msgstr "待报废"
+
+#. module: hp_asset
+#: field:asset.asset,d_fwsyqr:0
+msgid "房屋所有权人"
+msgstr "房屋所有权人"
+
+#. module: hp_asset
+#: field:asset.asset,q_pzwh:0
+msgid "批准文号"
+msgstr "批准文号"
+
+#. module: hp_asset
+#: field:asset.asset,trsyrq_date:0
+msgid "投入使用日期"
+msgstr "投入使用日期"
+
+#. module: hp_asset
+#: selection:asset.asset,syzk:0
+#: selection:asset.asset,syzt:0
+msgid "报废"
+msgstr "报废"
+
+#. module: hp_asset
+#: field:asset.import,asset_scrap_ids:0
+msgid "报废的资产"
+msgstr "报废的资产"
+
+#. module: hp_asset
+#: field:asset.asset,q_sqggr_date:0
+msgid "授权公告日"
+msgstr "授权公告日"
+
+#. module: hp_asset
+#: field:asset.asset,c_pql:0
+msgid "排气量"
+msgstr "排气量"
+
+#. module: hp_asset
+#: field:asset.asset,q_synx:0
+msgid "收益年限"
+msgstr "收益年限"
+
+#. module: hp_asset
+#: field:asset.asset,sl_dec:0
+msgid "数量"
+msgstr "数量"
+
+#. module: hp_asset
+#: field:asset.import,file_name:0
+msgid "文件名称"
+msgstr "文件名称"
+
+#. module: hp_asset
+#: field:asset.asset,w_wwdj:0
+msgid "文物等级"
+msgstr "文物等级"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+#: view:asset.asset:hp_asset.assets_form_view_edit
+#: selection:asset.asset,mxlb:0
+msgid "文物陈列品"
+msgstr "文物陈列品"
+
+#. module: hp_asset
+#: selection:asset.asset,qdfs:0
+msgid "新购"
+msgstr "新购"
+
+#. module: hp_asset
+#: field:asset.asset,mxlb:0
+msgid "明细类别"
+msgstr "明细类别"
+
+#. module: hp_asset
+#: view:asset.import:hp_asset.assets_import_form_view
+#: field:asset.import,asset_code_ids:0
+msgid "更新编号的资产"
+msgstr "更新编号的资产"
+
+#. module: hp_asset
+#: selection:asset.asset,sys_type:0
+msgid "未确认-新黄浦（含卢湾）"
+msgstr "未确认-新黄浦（含卢湾）"
+
+#. module: hp_asset
+#: selection:asset.asset,state:0
+msgid "机管局审核"
+msgstr "机管局审核"
+
+#. module: hp_asset
+#: field:asset.asset,d_qsnx:0
+msgid "权属年限"
+msgstr "权属年限"
+
+#. module: hp_asset
+#: field:asset.asset,d_qsxz:0
+msgid "权属性质"
+msgstr "权属性质"
+
+#. module: hp_asset
+#: field:asset.asset,d_qszh:0
+msgid "权属证号"
+msgstr "权属证号"
+
+#. module: hp_asset
+#: field:asset.asset,d_qszm:0
+msgid "权属证明"
+msgstr "权属证明"
+
+#. module: hp_asset
+#: model:ir.actions.report.xml,name:hp_asset.action_report_asset_code
+msgid "条码"
+msgstr "条码"
+
+#. module: hp_asset
+#: field:asset.asset,w_lyd:0
+msgid "来源地"
+msgstr "来源地"
+
+#. module: hp_asset
+#: field:asset.asset,t_dah:0
+msgid "档案号"
+msgstr "档案号"
+
+#. module: hp_asset
+#: field:asset.asset,q_zcdjrq_date:0
+msgid "注册登记日期"
+msgstr "注册登记日期"
+
+#. module: hp_asset
+#: field:asset.asset,q_zcdjjg:0
+msgid "注册登记机关"
+msgstr "注册登记机关"
+
+#. module: hp_asset
+#: field:asset.asset,s_sccj:0
+msgid "生产厂家"
+msgstr "生产厂家"
+
+#. module: hp_asset
+#: field:asset.asset,s_yt:0
+msgid "用途"
+msgstr "用途"
+
+#. module: hp_asset
+#: view:asset.import:hp_asset.assets_import_form_view
+msgid "确定要回滚吗？"
+msgstr "确定要回滚吗？"
+
+#. module: hp_asset
+#: selection:asset.import,state:0
+msgid "确认"
+msgstr "确认"
+
+#. module: hp_asset
+#: selection:asset.asset,sys_type:0
+msgid "确认-财政可对应"
+msgstr "确认-财政可对应"
+
+#. module: hp_asset
+#: selection:asset.asset,sys_type:0
+msgid "确认-财政无对应"
+msgstr "确认-财政无对应"
+
+#. module: hp_asset
+#: field:asset.asset,qy_kjbm:0
+msgid "科级部门"
+msgstr "科级部门"
+
+#. module: hp_asset
+#: field:asset.asset,d_jgrq_date:0
+msgid "竣工日期"
+msgstr "竣工日期"
+
+#. module: hp_asset
+#: field:asset.asset,glbm_id:0
+msgid "管理部门"
+msgstr "管理部门"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_search
+msgid "类型分类"
+msgstr "类型分类"
+
+#. module: hp_asset
+#: field:asset.asset,q_gsk:0
+msgid "纲属科"
+msgstr "纲属科"
+
+#. module: hp_asset
+#: model:ir.ui.menu,name:hp_asset.menu_partner_form_asset
+msgid "经销商"
+msgstr "经销商"
+
+#. module: hp_asset
+#: field:asset.asset,c_bzqk:0
+msgid "编制情况"
+msgstr "编制情况"
+
+#. module: hp_asset
+#: field:asset.department,code:0
+msgid "编号"
+msgstr "编号"
+
+#. module: hp_asset
+#: selection:asset.asset,syzk:0
+#: selection:asset.asset,syzt:0
+msgid "自用"
+msgstr "自用"
+
+#. module: hp_asset
+#: field:asset.asset,d_zyjz_dec:0
+msgid "自用价值"
+msgstr "自用价值"
+
+#. module: hp_asset
+#: field:asset.asset,d_zymj_dec:0
+msgid "自用面积"
+msgstr "自用面积"
+
+#. module: hp_asset
+#: selection:asset.asset,state:0
+#: selection:asset.import,state:0
+msgid "草稿"
+msgstr "草稿"
+
+#. module: hp_asset
+#: field:asset.asset,w_cpnd:0
+msgid "藏品年代"
+msgstr "藏品年代"
+
+#. module: hp_asset
+#: field:asset.asset,d_xzbgmj_dec:0
+msgid "行政办公面积"
+msgstr "行政办公面积"
+
+#. module: hp_asset
+#: field:asset.asset,ggxh:0
+msgid "规格型号"
+msgstr "规格型号"
+
+#. module: hp_asset
+#: field:asset.asset,jldw:0
+msgid "计量单位"
+msgstr "计量单位"
+
+#. module: hp_asset
+#: field:asset.asset,jzrq_date:0
+msgid "记账日期"
+msgstr "记账日期"
+
+#. module: hp_asset
+#: field:asset.asset,d_sjyt:0
+msgid "设计用途"
+msgstr "设计用途"
+
+#. module: hp_asset
+#: field:asset.asset,q_zsh:0
+msgid "证书号"
+msgstr "证书号"
+
+#. module: hp_asset
+#: selection:asset.asset,qdfs:0
+msgid "调拨"
+msgstr "调拨"
+
+#. module: hp_asset
+#: field:asset.asset,cwrzrq_date:0
+msgid "财务入账日期"
+msgstr "财务入账日期"
+
+#. module: hp_asset
+#: selection:asset.asset,state:0
+msgid "财政已审核"
+msgstr "财政已审核"
+
+#. module: hp_asset
+#: selection:asset.asset,state:0
+msgid "财政已报废"
+msgstr "财政已报废"
+
+#. module: hp_asset
+#: field:asset.asset,czxzj_dec:0
+msgid "财政性资金"
+msgstr "财政性资金"
+
+#. module: hp_asset
+#: field:asset.asset,czxzj_bmnys_dec:0
+msgid "财政性资金-部门内预算"
+msgstr "财政性资金-部门内预算"
+
+#. module: hp_asset
+#: field:asset.asset,czxzj_bmwys_dec:0
+msgid "财政性资金-部门外预算"
+msgstr "财政性资金-部门外预算"
+
+#. module: hp_asset
+#: field:asset.asset,czzcbh:0
+msgid "财政资产编号"
+msgstr "财政资产编号"
+
+#. module: hp_asset
+#: field:asset.asset,company_id:0
+#: field:asset.department,company_id:0
+#: field:asset.import,company_id:0
+#: model:ir.ui.menu,name:hp_asset.menu_action_res_company_form_asset
+msgid "账套"
+msgstr "账套"
+
+#. module: hp_asset
+#: field:asset.asset,gzccrq_date:0
+msgid "购置（出厂）日期"
+msgstr "购置（出厂）日期"
+
+#. module: hp_asset
+#: field:asset.asset,category_id:0
+msgid "资产分类名称"
+msgstr "资产分类名称"
+
+#. module: hp_asset
+#: field:asset.asset,name:0
+msgid "资产名称"
+msgstr "资产名称"
+
+#. module: hp_asset
+#: field:asset.asset,sys_type:0
+msgid "资产归属类型"
+msgstr "资产归属类型"
+
+#. module: hp_asset
+#: code:addons/hp_asset/models/asset.py:211
+#, python-format
+msgid "资产的流程状态不是草稿,不能删除!"
+msgstr "资产的流程状态不是草稿,不能删除!"
+
+#. module: hp_asset
+#: field:asset.asset,zcbh:0
+msgid "资产编号"
+msgstr "资产编号"
+
+#. module: hp_asset
+#: field:asset.asset,qy_zjly:0
+msgid "资金来源"
+msgstr "资金来源"
+
+#. module: hp_asset
+#: field:asset.asset,c_cph:0
+msgid "车牌号"
+msgstr "车牌号"
+
+#. module: hp_asset
+#: selection:asset.asset,mxlb:0
+msgid "车辆"
+msgstr "车辆"
+
+#. module: hp_asset
+#: field:asset.asset,c_clcd:0
+msgid "车辆产地"
+msgstr "车辆产地"
+
+#. module: hp_asset
+#: field:asset.asset,c_clyt:0
+msgid "车辆用途"
+msgstr "车辆用途"
+
+#. module: hp_asset
+#: field:asset.asset,c_clxszzcrq_date:0
+msgid "车辆行驶证注册日期"
+msgstr "车辆行驶证注册日期"
+
+#. module: hp_asset
+#: field:asset.asset,c_clsbh:0
+msgid "车辆识别号"
+msgstr "车辆识别号"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+#: view:asset.asset:hp_asset.assets_form_view_edit
+#: selection:asset.asset,mxlb:0
+msgid "通用/专用设备"
+msgstr "通用/专用设备"
+
+#. module: hp_asset
+#: field:asset.department,name:0
+msgid "部门名称"
+msgstr "部门名称"
+
+#. module: hp_asset
+#: field:asset.asset,cgzzxs:0
+msgid "采购组织形式"
+msgstr "采购组织形式"
+
+#. module: hp_asset
+#: field:asset.asset,jxs:0
+msgid "销售商"
+msgstr "销售商"
+
+#. module: hp_asset
+#: selection:asset.asset,syzk:0
+msgid "闲置"
+msgstr "闲置"
+
+#. module: hp_asset
+#: field:asset.asset,fczxzj_dec:0
+msgid "非财政性资金"
+msgstr "非财政性资金"
+
+#. module: hp_asset
+#: field:asset.asset,fczxzj_bmnys_dec:0
+msgid "非财政性资金-部门内预算"
+msgstr "非财政性资金-部门内预算"
+
+#. module: hp_asset
+#: field:asset.asset,fczxzj_bmwys_dec:0
+msgid "非财政性资金-部门外预算"
+msgstr "非财政性资金-部门外预算"
+
+#. module: hp_asset
+#: field:asset.asset,d_mj_dec:0
+msgid "面积"
+msgstr "面积"
+
+#. module: hp_asset
+#: field:asset.asset,ysxmbh:0
+msgid "预算项目编号"
+msgstr "预算项目编号"
+
+#. module: hp_asset
+#: field:asset.asset,yjsynx:0
+msgid "预计使用年限/寿命/种龄"
+msgstr "预计使用年限/寿命/种龄"
+
+#. module: hp_asset
+#: view:asset.asset:hp_asset.assets_form_view
+msgid "高级编辑"
+msgstr "高级编辑"
+
